@@ -50,10 +50,12 @@ def md_cell(text: str) -> str:
     return text.replace("|", "\\|").replace("\n", " ").strip()
 
 
-def fmt_time(minutes):
-    if not minutes:
-        return "—"
-    return f"{minutes}m"
+def fmt_time(q):
+    """Most entries are a single figure; a couple are budgeted as a range."""
+    lo, hi = q.get("minutes"), q.get("minutes_max")
+    if not lo:
+        return None
+    return f"{lo}\u2013{hi}m" if hi else f"{lo}m"
 
 
 def fmt_hours(minutes: int) -> str:
@@ -72,10 +74,16 @@ def render_list(meta: dict) -> str:
     out.append("")
     out.append(meta["description"])
     out.append("")
+    d = meta.get("difficulty", {})
+    spread = " · ".join(
+        f'{d[k]} {k.lower()}' for k in ("Easy", "Medium", "Hard") if d.get(k)
+    )
     out.append(
         f'**{len(qs)} questions** · **{fmt_hours(meta["total_minutes"])}** of focused practice · '
         f"{coding} hands-on coding · {free} open access"
     )
+    out.append("")
+    out.append(f"Difficulty: {spread}")
     out.append("")
     out.append(f'[Solve this list on 123ofAI →]({meta["platform_url"]}'
                f"?utm_source={UTM_SOURCE}&utm_medium={UTM_MEDIUM}&utm_campaign={campaign})")
@@ -86,11 +94,15 @@ def render_list(meta: dict) -> str:
     for q in qs:
         url = question_url(q["path"], campaign)
         title = md_cell(q["title"])
-        bits = [f'*{md_cell(q["subtopic"])}*']
+        bits = []
+        if q.get("level"):
+            bits.append(f'`{q["level"]}`')
+        bits.append(f'*{md_cell(q["subtopic"])}*')
         if q["type"] == "coding":
             bits.append("`code`")
-        if q["minutes"]:
-            bits.append(fmt_time(q["minutes"]))
+        t = fmt_time(q)
+        if t:
+            bits.append(t)
         if q["pro"]:
             bits.append("🔒")
         out.append(f'- [ ] **{q["n"]}.** [{title}]({url}) · ' + " · ".join(bits))
@@ -136,19 +148,22 @@ def build() -> str:
     p.append("")
     p.append("## The lists")
     p.append("")
-    p.append("| List | Questions | Time | Focus |")
-    p.append("|---|---|---|---|")
+    p.append("| List | Questions | Time | Easy / Medium / Hard | Focus |")
+    p.append("|---|---|---|---|---|")
     for m in metas:
+        d = m.get("difficulty", {})
+        mix = f'{d.get("Easy", 0)} / {d.get("Medium", 0)} / {d.get("Hard", 0)}'
         p.append(
             f'| [{m["name"]}](#{m["slug"]}) | {m["count"]} | '
-            f'{fmt_hours(m["total_minutes"])} | {md_cell(m["description"])} |'
+            f'{fmt_hours(m["total_minutes"])} | {mix} | {md_cell(m["description"])} |'
         )
     p.append("")
     p.append("## How to use this")
     p.append("")
     p.append("1. **Fork the repo** — then tick checkboxes in your own copy as you go.")
-    p.append("2. **Work in order.** The lists are sequenced, not sorted by difficulty. "
-             "Skipping around is fine, but the order is the recommendation.")
+    p.append("2. **Work in order.** The lists are sequenced, not sorted by difficulty — "
+             "each is tagged `Easy` / `Medium` / `Hard` so you can trade breadth for "
+             "depth when time is short.")
     p.append("3. **Time-box.** The estimate next to each question is roughly what a "
              "solid spoken answer takes. If you're well over, that's the gap to study.")
     p.append("4. **Click through to answer.** Reading a question and *thinking* you "
