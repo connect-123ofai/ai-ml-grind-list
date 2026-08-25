@@ -1041,7 +1041,7 @@
       "minutes": 5,
       "minutes_max": 10,
       "pro": false,
-      "path": "/qnalab/theoryquestions/mlops/data-processing/whats-the-dierence-between-batch-processing-and-streamprocessing"
+      "path": "/qnalab/theoryquestions/mlops/data-processing/whats-the-difference-between-batch-processing-and-stream-processing"
     },
     {
       "n": 87,
@@ -1053,7 +1053,7 @@
       "minutes": 15,
       "minutes_max": null,
       "pro": false,
-      "path": "/qnalab/theoryquestions/probability/naive-bayes/what-approach-would-you-take-to-adjustcalibrate-the-probabilities-generated-by-a-classification-model-for-better-accuracy"
+      "path": "/qnalab/theoryquestions/probability/naive-bayes/what-approach-would-you-take-to-adjust-calibrate-the-probabilities-generated-by-a-classification-model-for-better-accuracy"
     }
   ]
 }
