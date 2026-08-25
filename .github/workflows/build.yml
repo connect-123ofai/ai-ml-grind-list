@@ -1,0 +1,48 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  readme-in-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate list data
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          bad = 0
+          for f in pathlib.Path("data").glob("*.json"):
+              d = json.loads(f.read_text())
+              seen_n, seen_path = set(), set()
+              for q in d["questions"]:
+                  for key in ("title", "path", "type"):
+                      if not q.get(key):
+                          print(f"{f.name}: question {q.get('n')} missing {key}"); bad += 1
+                  if not q["path"].startswith("/"):
+                      print(f"{f.name}: #{q['n']} path must be site-relative"); bad += 1
+                  if q["n"] in seen_n:
+                      print(f"{f.name}: duplicate position {q['n']}"); bad += 1
+                  if q["path"] in seen_path:
+                      print(f"{f.name}: duplicate path {q['path']}"); bad += 1
+                  seen_n.add(q["n"]); seen_path.add(q["path"])
+              if d["count"] != len(d["questions"]):
+                  print(f"{f.name}: count {d['count']} != {len(d['questions'])} questions"); bad += 1
+              print(f"{f.name}: {len(d['questions'])} questions checked")
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: README is up to date
+        run: python3 scripts/generate_readme.py --check
+
+# A link checker belongs here, but is deliberately absent: Cloudflare currently
+# serves a managed challenge to non-browser clients, so a GitHub Actions runner
+# hitting 123ofai.com gets a 403 and the job would fail on every run for reasons
+# unrelated to the links. Add one once bot access is allowed.
