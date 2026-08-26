@@ -1,0 +1,214 @@
+{
+  "name": "Grind 75 LLM",
+  "slug": "grind-75-llm",
+  "platform_key": "GrindLLM50",
+  "platform_url": "https://123ofai.com/qnalab/lists/GrindLLM50",
+  "description": "Large language models — architecture, attention, training and fine-tuning, inference optimisation, RAG and prompting.",
+  "count": 18,
+  "total_minutes": 298,
+  "difficulty": {
+    "Easy": 0,
+    "Medium": 11,
+    "Hard": 7
+  },
+  "questions": [
+    {
+      "n": 1,
+      "title": "When to choose RAG vs Fine-tuning vs Prompting / PEFT (LoRA, QLoRA, adapters)?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Prompting & RAG",
+      "level": "Hard",
+      "minutes": 25,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/prompting-rag/when-to-choose-rag-vs-fine-tuning-vs-prompting-peft-lora-qlora-adapters"
+    },
+    {
+      "n": 2,
+      "title": "What does Named Entity Recognition (NER) mean?",
+      "type": "qna",
+      "topic": "Nlp",
+      "subtopic": "Applications of NLP and Neural Networks",
+      "level": "Medium",
+      "minutes": 8,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/nlp/applications-of-nlp-and-neural-networks/what-does-named-entity-recognition-ner-mean"
+    },
+    {
+      "n": 3,
+      "title": "What is Prompt Injection and how can you protect your models from it?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Prompting & RAG",
+      "level": "Hard",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/prompting-rag/what-is-prompt-injection-and-how-can-you-protect-your-models-from-it"
+    },
+    {
+      "n": 4,
+      "title": "Differences b/w multiplicative and additive attention. Pros and Cons? Do both give the same performance?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/differences-bw-multiplicative-and-additive-attention-pros-and-cons-do-both-give-the-same-performance"
+    },
+    {
+      "n": 5,
+      "title": "How and why is “masked” attention implemented?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 25,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/how-and-why-is-masked-attention-implemented"
+    },
+    {
+      "n": 6,
+      "title": "Why do we use Trigonometric functions for Positional Encoding?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Hard",
+      "minutes": 20,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/why-do-we-use-trigonometric-functions-for-positional-encoding"
+    },
+    {
+      "n": 7,
+      "title": "Can you explain the difference between encoder and decoder models in Transformer architecture?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/can-you-explain-the-difference-between-encoder-and-decoder-models-in-transformer-architecture"
+    },
+    {
+      "n": 8,
+      "title": "Is the transformer an auto-regressive model?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Hard",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/is-the-transformer-an-auto-regressive-model"
+    },
+    {
+      "n": 9,
+      "title": "Explain how contextual embeddings are created in a Transformer.",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 25,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/explain-how-contextual-embeddings-are-created-in-a-transformer"
+    },
+    {
+      "n": 10,
+      "title": "Explain the architecture of stable-diffusion",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/explain-the-architecture-of-stable-diffusion"
+    },
+    {
+      "n": 11,
+      "title": "What are the QKV matrices and why do we use projections of it?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Hard",
+      "minutes": 20,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/what-are-the-qkv-matrices-and-why-do-we-use-projections-of-it"
+    },
+    {
+      "n": 12,
+      "title": "How does Byte-Pair Encoding (BPE) tokenization work, with an example?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Tokenization",
+      "level": "Medium",
+      "minutes": 10,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/tokenization/how-does-byte-pair-encoding-bpe-tokenization-work-with-an-example"
+    },
+    {
+      "n": 13,
+      "title": "How are transformer-based architectures better than LSTM-based architectures in NLP tasks?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 10,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/how-are-transformer-based-architectures-better-than-lstm-based-architectures-in-nlp-tasks"
+    },
+    {
+      "n": 14,
+      "title": "How many parameters does BERT have? How does DistilBERT reduce this?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Medium",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/how-many-parameters-does-bert-have-how-does-distilbert-reduce-this"
+    },
+    {
+      "n": 15,
+      "title": "How can you evaluate the performance of Language Models?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Evaluation & Alignment",
+      "level": "Medium",
+      "minutes": 10,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/evaluation-alignment/how-can-you-evaluate-the-performance-of-language-models"
+    },
+    {
+      "n": 16,
+      "title": "Assume you have 2 models - one trained in (a) pytorch, (b) tensorflow. How will you convert this to ONNX and prepare it for deployment?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Specialized Tasks",
+      "level": "Medium",
+      "minutes": 10,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/specialized-tasks/assume-you-have-2-models-one-trained-in-a-pytorch-b-tensorflow-how-will-you-convert-this-to-onnx-and-prepare-it-for-deployment"
+    },
+    {
+      "n": 17,
+      "title": "At a high level, what is RLHF? Why is this a novel paradigm compared to self-supervised learning?",
+      "type": "qna",
+      "topic": "Llm",
+      "subtopic": "Model Architecture & Design",
+      "level": "Hard",
+      "minutes": 15,
+      "minutes_max": null,
+      "path": "/qnalab/theoryquestions/llm/model-architecture-design/at-a-high-level-what-is-rlhf-why-is-this-a-novel-paradigm-compared-to-self-supervised-learning"
+    },
+    {
+      "n": 18,
+      "title": "Implement Self-Attention in Numpy",
+      "type": "coding",
+      "topic": "NLP",
+      "subtopic": "Attention Mechanisms and Transformers",
+      "level": "Hard",
+      "minutes": 30,
+      "minutes_max": null,
+      "path": "/qnalab/mlcodingproblems/implement-self-attention-in-numpy"
+    }
+  ]
+}

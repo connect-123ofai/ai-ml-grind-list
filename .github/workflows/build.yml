@@ -39,6 +39,9 @@ jobs:
                   if q["path"] in seen_path:
                       print(f"{f.name}: duplicate path {q['path']}"); bad += 1
                   seen_path.add(q["path"])
+                  # The README promises every link opens without a subscription.
+                  if q.get("pro"):
+                      print(f"{f.name}: Pro question in a public list: {q['path']}"); bad += 1
               if "count" in d and d["count"] != len(qs):
                   print(f"{f.name}: count {d['count']} != {len(qs)} questions"); bad += 1
               print(f"{f.name}: {len(qs)} questions checked")

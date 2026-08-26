@@ -1,30 +1,19 @@
 {
   "name": "Grind 75 ML",
   "slug": "grind-75-ml",
+  "platform_key": "Grind75ML",
   "platform_url": "https://123ofai.com/qnalab/lists/Grind75ML",
-  "description": "Core machine learning: classical ML, deep learning, computer vision, NLP, MLOps and hands-on coding.",
-  "count": 87,
-  "total_minutes": 1051,
+  "description": "Core machine learning — classical ML, deep learning, computer vision, NLP, MLOps and hands-on coding.",
+  "count": 64,
+  "total_minutes": 783,
   "difficulty": {
-    "Easy": 17,
-    "Medium": 52,
-    "Hard": 18
+    "Easy": 16,
+    "Medium": 35,
+    "Hard": 13
   },
   "questions": [
     {
       "n": 1,
-      "title": "What is the process behind the Non-Max Suppression method?",
-      "type": "qna",
-      "topic": "Computer Vision",
-      "subtopic": "Object Detection and Segmentation",
-      "level": "Medium",
-      "minutes": 8,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/computer-vision/object-detection-and-segmentation/what-is-the-process-behind-the-non-max-suppression-method"
-    },
-    {
-      "n": 2,
       "title": "What techniques can be used for Feature Engineering with text data?",
       "type": "qna",
       "topic": "Nlp",
@@ -32,11 +21,10 @@
       "level": "Medium",
       "minutes": 18,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/nlp/text-preprocessing-and-feature-engineering/what-techniques-can-be-used-for-feature-engineering-with-text-data"
     },
     {
-      "n": 3,
+      "n": 2,
       "title": "What does an embedding refer to in natural language processing?",
       "type": "qna",
       "topic": "Nlp",
@@ -44,11 +32,10 @@
       "level": "Hard",
       "minutes": 18,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/nlp/text-preprocessing-and-feature-engineering/what-does-an-embedding-refer-to-in-natural-language-processing"
     },
     {
-      "n": 4,
+      "n": 3,
       "title": "What are the primary challenges involved in training RNNs? How can these challenges be addressed?",
       "type": "qna",
       "topic": "Nlp",
@@ -56,11 +43,10 @@
       "level": "Medium",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/nlp/sequence-modeling-and-rnns/what-are-the-primary-challenges-involved-in-training-rnns-how-can-these-challenges-be-addressed"
     },
     {
-      "n": 5,
+      "n": 4,
       "title": "What distinguishes lemmatization from stemming?",
       "type": "qna",
       "topic": "Nlp",
@@ -68,11 +54,10 @@
       "level": "Easy",
       "minutes": 6,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/nlp/text-preprocessing-and-feature-engineering/what-distinguishes-lemmatization-from-stemming"
     },
     {
-      "n": 6,
+      "n": 5,
       "title": "What is the resultant rank of multiplying a 3x1 and 1x3 matrix?",
       "type": "qna",
       "topic": "Linear Algebra",
@@ -80,11 +65,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/linear-algebra/decomposing-matrices/what-is-the-resultant-rank-of-multiplying-a-3x1-and-1x3-matrix"
     },
     {
-      "n": 7,
+      "n": 6,
       "title": "Optimize the prediction throughput for an RNN?",
       "type": "qna",
       "topic": "Nlp",
@@ -92,11 +76,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/nlp/sequence-modeling-and-rnns/optimize-the-prediction-throughput-for-an-rnn"
     },
     {
-      "n": 8,
+      "n": 7,
       "title": "What does BLEU mean?",
       "type": "qna",
       "topic": "Nlp",
@@ -104,11 +87,10 @@
       "level": "Medium",
       "minutes": 6,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/nlp/evaluation-metrics-in-nlp/what-does-bleu-mean"
     },
     {
-      "n": 9,
+      "n": 8,
       "title": "What types of Model Drifts have you encountered, and how have you addressed them?",
       "type": "qna",
       "topic": "Mlops",
@@ -116,11 +98,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": 20,
-      "pro": false,
       "path": "/qnalab/theoryquestions/mlops/model-drift-data-management/what-types-of-model-drifts-have-you-encountered-and-how-have-you-addressed-them"
     },
     {
-      "n": 10,
+      "n": 9,
       "title": "KL Divergence and Cross-Entropy – similarity? Can one be used in place of the other as a loss function?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -128,11 +109,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/kl-divergence-and-cross-entropy-similarity-can-one-be-used-in-place-of-the-other-as-a-loss-function"
     },
     {
-      "n": 11,
+      "n": 10,
       "title": "Explain the types of optimizers – Adam, Adagrad, etc.",
       "type": "qna",
       "topic": "Classical Ml",
@@ -140,11 +120,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/explain-the-types-of-optimizers-adam-adagrad-etc"
     },
     {
-      "n": 12,
+      "n": 11,
       "title": "What happens when there is no clear Hyperplane in SVM?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -152,11 +131,10 @@
       "level": "Medium",
       "minutes": 5,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-happens-when-there-is-no-clear-hyperplane-in-svm"
     },
     {
-      "n": 13,
+      "n": 12,
       "title": "Why would you use the Kernel Trick?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -164,11 +142,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/why-would-you-use-the-kernel-trick"
     },
     {
-      "n": 14,
+      "n": 13,
       "title": "Why are Non-linear Activation functions important?",
       "type": "qna",
       "topic": "Deep Learning",
@@ -176,11 +153,10 @@
       "level": "Hard",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/deep-learning/activation-functions/why-are-non-linear-activation-functions-important"
     },
     {
-      "n": 15,
+      "n": 14,
       "title": "How do you select the Activation Function for a Deep Learning Model?",
       "type": "qna",
       "topic": "Deep Learning",
@@ -188,11 +164,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/deep-learning/activation-functions/how-do-you-select-the-activation-function-for-a-deep-learning-model"
     },
     {
-      "n": 16,
+      "n": 15,
       "title": "What is Cross-Validation and why is it important in supervised learning?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -200,11 +175,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-is-cross-validation-and-why-is-it-important-in-supervised-learning"
     },
     {
-      "n": 17,
+      "n": 16,
       "title": "What happens when you initialise your network weights with the following scenarios: (a) with all zeros, (b) all constants (c) all random?",
       "type": "qna",
       "topic": "Deep Learning",
@@ -212,11 +186,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/deep-learning/network-architecture-and-layers/what-happens-when-you-initialise-your-network-weights-with-the-following-scenarios-a-with-all-zeros-b-all-constants-c-all-random"
     },
     {
-      "n": 18,
+      "n": 17,
       "title": "Would you use PCA on large datasets or there is a better alternative?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -224,11 +197,10 @@
       "level": "Medium",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/would-you-use-pca-on-large-datasets-or-there-is-a-better-alternative"
     },
     {
-      "n": 19,
+      "n": 18,
       "title": "While performing K-Means Clustering, how do you determine the value of K?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -236,11 +208,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/while-performing-k-means-clustering-how-do-you-determine-the-value-of-k"
     },
     {
-      "n": 20,
+      "n": 19,
       "title": "What distinguishes Linear Filters from Non-Linear Filters?",
       "type": "qna",
       "topic": "Computer Vision",
@@ -248,11 +219,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/computer-vision/fundamentals-preprocessing/what-distinguishes-linear-filters-from-non-linear-filters"
     },
     {
-      "n": 21,
+      "n": 20,
       "title": "Suppose you want to train a classifier, and you have plenty of unlabeled training data but only a few thousand labeled instances. How would you proceed?",
       "type": "qna",
       "topic": "Deep Learning",
@@ -260,11 +230,10 @@
       "level": "Hard",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/deep-learning/transfer-learning-and-semi-supervised-learning/suppose-you-want-to-train-a-classifier-and-you-have-plenty-of-unlabeled-training-data-but-only-a-few-thousand-labeled-instances-how-would-you-proceed"
     },
     {
-      "n": 22,
+      "n": 21,
       "title": "How does a Deep Neural Network escape/resist the Curse of Dimensionality?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -272,11 +241,10 @@
       "level": "Hard",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/how-does-a-deep-neural-network-escaperesist-the-curse-of-dimensionality"
     },
     {
-      "n": 23,
+      "n": 22,
       "title": "Why do models overfit and how do we prevent it?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -284,11 +252,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/why-do-models-overfit-and-how-do-we-prevent-it"
     },
     {
-      "n": 24,
+      "n": 23,
       "title": "What methods can you use to evaluate the predictions in an Object Detection model?",
       "type": "qna",
       "topic": "Computer Vision",
@@ -296,11 +263,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/computer-vision/evaluation-metrics/what-methods-can-you-use-to-evaluate-the-predictions-in-an-object-detection-model"
     },
     {
-      "n": 25,
+      "n": 24,
       "title": "What is the Curse of Dimensionality and how can Unsupervised Learning help with it?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -308,11 +274,10 @@
       "level": "Easy",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/what-is-the-curse-of-dimensionality-and-how-can-unsupervised-learning-help-with-it"
     },
     {
-      "n": 26,
+      "n": 25,
       "title": "What distinguishes a gradient boost decision tree (GBDT), a decision tree, and a random forest?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -320,11 +285,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/what-distinguishes-a-gradient-boost-decision-tree-gbdt-a-decision-tree-and-a-random-forest"
     },
     {
-      "n": 27,
+      "n": 26,
       "title": "Why Naive Bayes is called Naive?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -332,11 +296,10 @@
       "level": "Easy",
       "minutes": 5,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/why-naive-bayes-is-called-naive"
     },
     {
-      "n": 28,
+      "n": 27,
       "title": "What are the main difficulties when training GANs?",
       "type": "qna",
       "topic": "Computer Vision",
@@ -344,11 +307,10 @@
       "level": "Hard",
       "minutes": 12,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/computer-vision/generative-models/what-are-the-main-difficulties-when-training-gans"
     },
     {
-      "n": 29,
+      "n": 28,
       "title": "How to use one-class SVM for Anomalies Detections?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -356,11 +318,10 @@
       "level": "Hard",
       "minutes": 12,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-to-use-one-class-svm-for-anomalies-detections"
     },
     {
-      "n": 30,
+      "n": 29,
       "title": "What is the Bias-Variance tradeoff?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -368,11 +329,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-is-the-bias-variance-tradeoff"
     },
     {
-      "n": 31,
+      "n": 30,
       "title": "How can less Training Data give Higher Accuracy?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -380,11 +340,10 @@
       "level": "Medium",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-can-less-training-data-give-higher-accuracy"
     },
     {
-      "n": 32,
+      "n": 31,
       "title": "Contrast the Sobel and Canny methods for Edge Detection in Computer Vision.",
       "type": "qna",
       "topic": "Computer Vision",
@@ -392,59 +351,10 @@
       "level": "Hard",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/computer-vision/fundamentals-preprocessing/contrast-the-sobel-and-canny-methods-for-edge-detection-in-computer-vision"
     },
     {
-      "n": 33,
-      "title": "What's the difference between Batch Normalization, Instance Normalization, and Layer Normalization?",
-      "type": "qna",
-      "topic": "Deep Learning",
-      "subtopic": "Optimization Techniques and Regularization",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/deep-learning/optimization-techniques-and-regularization/whats-the-difference-between-batch-normalization-instance-normalization-and-layer-normalization"
-    },
-    {
-      "n": 34,
-      "title": "What occurs if you trade the Breadth of a Neural Network for its Depth?",
-      "type": "qna",
-      "topic": "Deep Learning",
-      "subtopic": "Network Architecture and Layers",
-      "level": "Hard",
-      "minutes": 12,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/deep-learning/network-architecture-and-layers/what-occurs-if-you-trade-the-breadth-of-a-neural-network-for-its-depth"
-    },
-    {
-      "n": 35,
-      "title": "Are there any problems when using Batch Normalization in Deep Neural Networks?",
-      "type": "qna",
-      "topic": "Deep Learning",
-      "subtopic": "Optimization Techniques and Regularization",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/deep-learning/optimization-techniques-and-regularization/are-there-any-problems-when-using-batch-normalization-in-deep-neural-networks"
-    },
-    {
-      "n": 36,
-      "title": "How can you identify if your model is encountering the problem of Exploding Gradients?",
-      "type": "qna",
-      "topic": "Deep Learning",
-      "subtopic": "Optimization Techniques and Regularization",
-      "level": "Medium",
-      "minutes": 15,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/deep-learning/optimization-techniques-and-regularization/how-can-you-identify-if-your-model-is-encountering-the-problem-of-exploding-gradients"
-    },
-    {
-      "n": 37,
+      "n": 32,
       "title": "What's the difference between Bagging and Boosting algorithms?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -452,11 +362,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/whats-the-difference-between-bagging-and-boosting-algorithms"
     },
     {
-      "n": 38,
+      "n": 33,
       "title": "In what situations do you not use Ensemble Classifiers?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -464,11 +373,10 @@
       "level": "Medium",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/in-what-situations-do-you-not-use-ensemble-classifiers"
     },
     {
-      "n": 39,
+      "n": 34,
       "title": "What is the difference between Post-pruning and Pre-pruning?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -476,11 +384,10 @@
       "level": "Easy",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/what-is-the-difference-between-post-pruning-and-pre-pruning"
     },
     {
-      "n": 40,
+      "n": 35,
       "title": "How do you make your model robust to outliers?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -488,35 +395,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/preprocessing/how-do-you-make-your-model-robust-to-outliers"
     },
     {
-      "n": 41,
-      "title": "Given the theoretical advantage of second-order gradients, why are they not used in training models?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Advanced Algorithms",
-      "level": "Hard",
-      "minutes": 18,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/given-the-theoretical-advantage-of-second-order-gradients-why-are-they-not-used-in-training-models"
-    },
-    {
-      "n": 42,
-      "title": "How do you work with few labels / limited training data?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 12,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/how-do-you-work-with-few-labels-limited-training-data"
-    },
-    {
-      "n": 43,
+      "n": 36,
       "title": "How would you define the Stopping Criteria for decision trees?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -524,11 +406,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/how-would-you-define-the-stopping-criteria-for-decision-trees"
     },
     {
-      "n": 44,
+      "n": 37,
       "title": "In decision Tree, implement information gain.",
       "type": "qna",
       "topic": "Classical Ml",
@@ -536,23 +417,10 @@
       "level": "Hard",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/advanced-algorithms/in-decision-tree-implement-information-gain"
     },
     {
-      "n": 45,
-      "title": "What are the methods for assessing the performance of a regression model?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Evaluation",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/evaluation/what-are-the-methods-for-assessing-the-performance-of-a-regression-model"
-    },
-    {
-      "n": 46,
+      "n": 38,
       "title": "What distance metric to use in KNN.",
       "type": "qna",
       "topic": "Classical Ml",
@@ -560,23 +428,10 @@
       "level": "Hard",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-distance-metric-to-use-in-knn"
     },
     {
-      "n": 47,
-      "title": "How can you debug and enhance performance if your model performing poorly?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Evaluation",
-      "level": "Hard",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/evaluation/how-can-you-debug-and-enhance-performance-if-your-model-performing-poorly"
-    },
-    {
-      "n": 48,
+      "n": 39,
       "title": "How to initialize K-means, and what is the stopping criteria?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -584,71 +439,10 @@
       "level": "Medium",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/how-to-initialize-k-means-and-what-is-the-stopping-criteria"
     },
     {
-      "n": 49,
-      "title": "Why not use evaluation metrics to directly optimize a model?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Evaluation",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/evaluation/why-not-use-evaluation-metrics-to-directly-optimize-a-model"
-    },
-    {
-      "n": 50,
-      "title": "Which semi-supervised learning strategies are there? How do they work?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Easy",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/which-semi-supervised-learning-strategies-are-there-how-do-they-work"
-    },
-    {
-      "n": 51,
-      "title": "What is a reasonable hyperparameter tuning procedure?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 15,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/what-is-a-reasonable-hyperparameter-tuning-procedure"
-    },
-    {
-      "n": 52,
-      "title": "What is regularization, exactly? List two methods and contrast them.",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/what-is-regularization-exactly-list-two-methods-and-contrast-them"
-    },
-    {
-      "n": 53,
-      "title": "How do you deal with overfitting?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/how-do-you-deal-with-overfitting"
-    },
-    {
-      "n": 54,
+      "n": 40,
       "title": "How would you handle feature values that are missing?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -656,11 +450,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/preprocessing/how-would-you-handle-feature-values-that-are-missing"
     },
     {
-      "n": 55,
+      "n": 41,
       "title": "How feature selection is done?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -668,59 +461,10 @@
       "level": "Medium",
       "minutes": 8,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/preprocessing/how-feature-selection-is-done"
     },
     {
-      "n": 56,
-      "title": "Can you mentione some ways to optimize gradient descent?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 12,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/can-you-mentione-some-ways-to-optimize-gradient-descent"
-    },
-    {
-      "n": 57,
-      "title": "Is it possible to optimize the algorithm more quickly? Mention any trade-offs, if exist?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 6,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/is-it-possible-to-optimize-the-algorithm-more-quickly-mention-any-trade-offs-if-exist"
-    },
-    {
-      "n": 58,
-      "title": "How can you determine whether a loss function is convex?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Evaluation",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/evaluation/how-can-you-determine-whether-a-loss-function-is-convex"
-    },
-    {
-      "n": 59,
-      "title": "What is overfitting? How to tell if your model is overfitting?",
-      "type": "qna",
-      "topic": "Classical Ml",
-      "subtopic": "Practical Considerations",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/classical-ml/practical-considerations/what-is-overfitting-how-to-tell-if-your-model-is-overfitting"
-    },
-    {
-      "n": 60,
+      "n": 42,
       "title": "What is a Confusion Matrix?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -728,11 +472,10 @@
       "level": "Medium",
       "minutes": 12,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-is-a-confusion-matrix"
     },
     {
-      "n": 61,
+      "n": 43,
       "title": "What are several ways to handle label imbalance in a dataset?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -740,11 +483,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/preprocessing/what-are-several-ways-to-handle-label-imbalance-in-a-dataset"
     },
     {
-      "n": 62,
+      "n": 44,
       "title": "For both Convex, and Non-Convex Problems, does the Gradient in SGD always point to the global extreme value?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -752,11 +494,10 @@
       "level": "Hard",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/for-both-convex-and-non-convex-problems-does-the-gradient-in-sgd-always-point-to-the-global-extreme-value"
     },
     {
-      "n": 63,
+      "n": 45,
       "title": "How would you choose an evaluation metric for an Imbalanced classification?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -764,11 +505,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-would-you-choose-an-evaluation-metric-for-an-imbalanced-classification"
     },
     {
-      "n": 64,
+      "n": 46,
       "title": "How does Batch Size affect the Convergence of SGD and why?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -776,11 +516,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/how-does-batch-size-affect-the-convergence-of-sgd-and-why"
     },
     {
-      "n": 65,
+      "n": 47,
       "title": "How does ROC curve and AUC value help measure how good a model is?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -788,11 +527,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-does-roc-curve-and-auc-value-help-measure-how-good-a-model-is"
     },
     {
-      "n": 66,
+      "n": 48,
       "title": "What are the trade-offs between the different types of Classification Algorithms? How would do you choose the best one?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -800,11 +538,10 @@
       "level": "Hard",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-are-the-trade-offs-between-the-different-types-of-classification-algorithms-how-would-do-you-choose-the-best-one"
     },
     {
-      "n": 67,
+      "n": 49,
       "title": "What are Slack Variables in SVM?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -812,11 +549,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/what-are-slack-variables-in-svm"
     },
     {
-      "n": 68,
+      "n": 50,
       "title": "How would you make a prediction using a Logistic Regression model?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -824,11 +560,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-would-you-make-a-prediction-using-a-logistic-regression-model"
     },
     {
-      "n": 69,
+      "n": 51,
       "title": "What is Silhouette Analysis?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -836,11 +571,10 @@
       "level": "Medium",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/what-is-silhouette-analysis"
     },
     {
-      "n": 70,
+      "n": 52,
       "title": "How do you choose the optimal k in k-NN?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -848,11 +582,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-do-you-choose-the-optimal-k-in-k-nn"
     },
     {
-      "n": 71,
+      "n": 53,
       "title": "What would be a good way to use Clustering for Outlier detection?",
       "type": "qna",
       "topic": "Classical Ml",
@@ -860,11 +593,10 @@
       "level": "Medium",
       "minutes": 12,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/what-would-be-a-good-way-to-use-clustering-for-outlier-detection"
     },
     {
-      "n": 72,
+      "n": 54,
       "title": "Why does L1 regularization give sparse coefficients? Show derivation",
       "type": "qna",
       "topic": "Classical Ml",
@@ -872,71 +604,10 @@
       "level": "Hard",
       "minutes": 18,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/why-does-l1-regularization-give-sparse-coefficients-show-derivation"
     },
     {
-      "n": 73,
-      "title": "Create a machine learning system to comprehend instructions such as \"Play the highest-rated songs by the Beatles.\"",
-      "type": "qna",
-      "topic": "System Design",
-      "subtopic": "High-Level Design",
-      "level": "Hard",
-      "minutes": 20,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/system-design/high-level-design/create-a-machine-learning-system-to-comprehend-instructions-such-as-play-the-highest-rated-songs-by-the-beatles"
-    },
-    {
-      "n": 74,
-      "title": "How can the model be configured to handle real-time requests?",
-      "type": "qna",
-      "topic": "System Design",
-      "subtopic": "Deployment & Serving",
-      "level": "Medium",
-      "minutes": 10,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/system-design/deployment-serving/how-can-the-model-be-configured-to-handle-real-time-requests"
-    },
-    {
-      "n": 75,
-      "title": "What are the key steps involved in the Face Recognition process?",
-      "type": "qna",
-      "topic": "Computer Vision",
-      "subtopic": "Object Detection and Segmentation",
-      "level": "Medium",
-      "minutes": 8,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/computer-vision/object-detection-and-segmentation/what-are-the-key-steps-involved-in-the-face-recognition-process"
-    },
-    {
-      "n": 76,
-      "title": "Explain how these object detection models work: (a) YOLOv10 (b)RF-DETR",
-      "type": "qna",
-      "topic": "Computer Vision",
-      "subtopic": "Object Detection and Segmentation",
-      "level": "Medium",
-      "minutes": 20,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/computer-vision/object-detection-and-segmentation/explain-how-these-object-detection-models-work-a-yolov10-brf-detr"
-    },
-    {
-      "n": 77,
-      "title": "Are there any issues associated with utilizing the YOLO architecture for object detection?",
-      "type": "qna",
-      "topic": "Computer Vision",
-      "subtopic": "Object Detection and Segmentation",
-      "level": "Hard",
-      "minutes": 12,
-      "minutes_max": null,
-      "pro": true,
-      "path": "/qnalab/theoryquestions/computer-vision/object-detection-and-segmentation/are-there-any-issues-associated-with-utilizing-the-yolo-architecture-for-object-detection"
-    },
-    {
-      "n": 78,
+      "n": 55,
       "title": "PCA Implementation",
       "type": "coding",
       "topic": "Classical ML",
@@ -944,11 +615,10 @@
       "level": "Medium",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/pca-implementation"
     },
     {
-      "n": 79,
+      "n": 56,
       "title": "K-Means Clustering",
       "type": "coding",
       "topic": "Classical ML",
@@ -956,11 +626,10 @@
       "level": "Medium",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/k-means-clustering"
     },
     {
-      "n": 80,
+      "n": 57,
       "title": "Linear Regression",
       "type": "coding",
       "topic": "Classical ML",
@@ -968,11 +637,10 @@
       "level": "Easy",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/linear-regression"
     },
     {
-      "n": 81,
+      "n": 58,
       "title": "KL Divergence",
       "type": "coding",
       "topic": "Classical ML",
@@ -980,11 +648,10 @@
       "level": "Medium",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/kl-divergence"
     },
     {
-      "n": 82,
+      "n": 59,
       "title": "Data Cleaning",
       "type": "coding",
       "topic": "Classical ML",
@@ -992,11 +659,10 @@
       "level": "Easy",
       "minutes": 10,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/data-cleaning"
     },
     {
-      "n": 83,
+      "n": 60,
       "title": "Eigen Values and Eigen Vector",
       "type": "coding",
       "topic": "Linear Algebra",
@@ -1004,11 +670,10 @@
       "level": "Medium",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/eigen-values-and-eigen-vector"
     },
     {
-      "n": 84,
+      "n": 61,
       "title": "KL Divergence vs Cross-Entropy",
       "type": "coding",
       "topic": "Classical ML",
@@ -1016,11 +681,10 @@
       "level": "Medium",
       "minutes": 20,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/kl-divergence-vs-cross-entropy"
     },
     {
-      "n": 85,
+      "n": 62,
       "title": "Implement Backpropagation and Gradient Descent (2-Layer ANN)",
       "type": "coding",
       "topic": "Deep Learning",
@@ -1028,11 +692,10 @@
       "level": "Medium",
       "minutes": 30,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/mlcodingproblems/implement-backpropagation-and-gradient-descent-(2-layer-ann)"
     },
     {
-      "n": 86,
+      "n": 63,
       "title": "What's the difference between Batch Processing and Stream Processing?",
       "type": "qna",
       "topic": "Mlops",
@@ -1040,11 +703,10 @@
       "level": "Medium",
       "minutes": 5,
       "minutes_max": 10,
-      "pro": false,
       "path": "/qnalab/theoryquestions/mlops/data-processing/whats-the-difference-between-batch-processing-and-stream-processing"
     },
     {
-      "n": 87,
+      "n": 64,
       "title": "What approach would you take to adjust (calibrate) the probabilities generated by a classification model for better accuracy?",
       "type": "qna",
       "topic": "Probability",
@@ -1052,7 +714,6 @@
       "level": "Hard",
       "minutes": 15,
       "minutes_max": null,
-      "pro": false,
       "path": "/qnalab/theoryquestions/probability/naive-bayes/what-approach-would-you-take-to-adjust-calibrate-the-probabilities-generated-by-a-classification-model-for-better-accuracy"
     }
   ]

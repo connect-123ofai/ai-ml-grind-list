@@ -1,7 +1,7 @@
 # Contributing
 
 Full guidance — templates, the quality bar, how review works and how long it
-takes — lives in **[section 7 of the README](README.md#7-how-to-contribute)**.
+takes — lives in **[section 6 of the README](README.md#6-how-to-contribute)**.
 This file covers the mechanics.
 
 ## The one rule
@@ -29,7 +29,11 @@ README alongside your data change; CI fails if the two disagree.
 
 ## Editing an existing list entry
 
-Entries live in `data/grind-75-ml.json`, `data/grind-50-llm.json` and
+> **The published lists carry free questions only.** Every link in this repo
+> must open without a subscription — that is the promise the README makes, and
+> a paywalled entry breaks it. Don't add an entry whose answer sits behind Pro.
+
+Entries live in `data/grind-75-ml.json`, `data/grind-75-llm.json` and
 `data/grind-more.json`.
 
 ```json
@@ -42,7 +46,6 @@ Entries live in `data/grind-75-ml.json`, `data/grind-50-llm.json` and
   "level": "Medium",
   "minutes": 10,
   "minutes_max": null,
-  "pro": false,
   "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/why-would-you-use-the-kernel-trick"
 }
 ```
@@ -54,7 +57,6 @@ Entries live in `data/grind-75-ml.json`, `data/grind-50-llm.json` and
 | `level` | `Easy`, `Medium` or `Hard`. |
 | `minutes` | Time for a solid spoken answer, not for reading it. |
 | `minutes_max` | Only when the budget is a range; otherwise `null`. |
-| `pro` | Whether the worked answer sits behind 123ofAI Pro. |
 | `path` | Site-relative. No domain, no UTM — the generator adds both. |
 
 ## Before you open a PR
