@@ -1,0 +1,399 @@
+{
+  "name": "Grind More",
+  "slug": "grind-more",
+  "description": "Beyond the two core lists — a wider set of questions from the same bank, grouped by area. Every one of these is free to attempt.",
+  "platform_url": "https://123ofai.com/qnalab/generic",
+  "count": 40,
+  "groups": [
+    {
+      "topic": "Classical Ml",
+      "key": "classical-ml",
+      "available": 164,
+      "questions": [
+        {
+          "title": "What's the difference between ROC and Precision-Recall Curves?",
+          "topic": "Classical Ml",
+          "subtopic": "Supervised Learning",
+          "level": "Hard",
+          "minutes": 125,
+          "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/whats-the-difference-between-roc-and-precision-recall-curves"
+        },
+        {
+          "title": "How would you encode a large Pandas dataframe using ScikitLearn?",
+          "topic": "Classical Ml",
+          "subtopic": "Supervised Learning",
+          "level": "Medium",
+          "minutes": 105,
+          "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-would-you-encode-a-large-pandas-dataframe-using-scikitlearn"
+        },
+        {
+          "title": "How do you evaluate the performance of a dimensionality reduction technique?",
+          "topic": "Classical Ml",
+          "subtopic": "Unsupervised Learning",
+          "level": "Medium",
+          "minutes": 50,
+          "path": "/qnalab/theoryquestions/classical-ml/unsupervised-learning/how-do-you-evaluate-the-performance-of-a-dimensionality-reduction-technique"
+        },
+        {
+          "title": "How would you implement primal SVM in plain Python?",
+          "topic": "Classical Ml",
+          "subtopic": "Supervised Learning",
+          "level": "Hard",
+          "minutes": 20,
+          "path": "/qnalab/theoryquestions/classical-ml/supervised-learning/how-would-you-implement-primal-svm-in-plain-python"
+        }
+      ]
+    },
+    {
+      "topic": "Deep Learning",
+      "key": "deep-learning",
+      "available": 8,
+      "questions": [
+        {
+          "title": "What is Transfer learning and how can you implement it in Keras?",
+          "topic": "Deep Learning",
+          "subtopic": "Transfer Learning and Semi-Supervised Learning",
+          "level": "Medium",
+          "minutes": 20,
+          "path": "/qnalab/theoryquestions/deep-learning/transfer-learning-and-semi-supervised-learning/what-is-transfer-learning-and-how-can-you-implement-it-in-keras"
+        },
+        {
+          "title": "Give a structured framework on hyper-parameter tuning for deep learning models. What gains can you expect from it? Provide an example with code.",
+          "topic": "Deep Learning",
+          "subtopic": "Network Architecture and Layers",
+          "level": "Medium",
+          "minutes": 20,
+          "path": "/qnalab/theoryquestions/deep-learning/network-architecture-and-layers/give-a-structured-framework-on-hyper-parameter-tuning-for-deep-learning-models-what-gains-can-you-expect-from-it-provide-an-example-with-code"
+        },
+        {
+          "title": "How does a Deep Neural Network escape/resist the Curse of Dimensionality?",
+          "topic": "Deep Learning",
+          "subtopic": "Core Concepts in Deep Learning",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/deep-learning/core-concepts-in-deep-learning/how-does-a-deep-neural-network-escaperesist-the-curse-of-dimensionality"
+        },
+        {
+          "title": "Define Computation Graphs.",
+          "topic": "Deep Learning",
+          "subtopic": "Core Concepts in Deep Learning",
+          "level": "Hard",
+          "minutes": 12,
+          "path": "/qnalab/theoryquestions/deep-learning/core-concepts-in-deep-learning/define-computation-graphs"
+        }
+      ]
+    },
+    {
+      "topic": "Nlp",
+      "key": "nlp",
+      "available": 18,
+      "questions": [
+        {
+          "title": "What distinguishes Stateful RNN from Stateless RNN? What advantages and disadvantages do they each have?",
+          "topic": "Nlp",
+          "subtopic": "Sequence Modeling and RNNs",
+          "level": "Medium",
+          "minutes": 12,
+          "path": "/qnalab/theoryquestions/nlp/sequence-modeling-and-rnns/what-distinguishes-stateful-rnn-from-stateless-rnn-what-advantages-and-disadvantages-do-they-each-have"
+        },
+        {
+          "title": "What is Semantic Analysis?",
+          "topic": "Nlp",
+          "subtopic": "Applications of NLP and Neural Networks",
+          "level": "Hard",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/nlp/applications-of-nlp-and-neural-networks/what-is-semantic-analysis"
+        },
+        {
+          "title": "What factors contribute to the low accuracy of Sentiment Analysis?",
+          "topic": "Nlp",
+          "subtopic": "Applications of NLP and Neural Networks",
+          "level": "Hard",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/nlp/applications-of-nlp-and-neural-networks/what-factors-contribute-to-the-low-accuracy-of-sentiment-analysis"
+        },
+        {
+          "title": "Contrast Feed-forward Neural Networks with Recurrent Neural Networks.",
+          "topic": "Nlp",
+          "subtopic": "Sequence Modeling and RNNs",
+          "level": "Hard",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/nlp/sequence-modeling-and-rnns/contrast-feed-forward-neural-networks-with-recurrent-neural-networks"
+        }
+      ]
+    },
+    {
+      "topic": "Llm",
+      "key": "llm",
+      "available": 23,
+      "questions": [
+        {
+          "title": "How do Diffusion Models work? (Take the case of Stable Diffusion) Explain the architecture, training, inference process, loss functions, etc.",
+          "topic": "Llm",
+          "subtopic": "Model Architecture & Design",
+          "level": "Medium",
+          "minutes": 20,
+          "path": "/qnalab/theoryquestions/llm/model-architecture-design/how-do-diffusion-models-work-take-the-case-of-stable-diffusion-explain-the-architecture-training-inference-process-loss-functions-etc"
+        },
+        {
+          "title": "Why do we scale “multiplicative attention” by sqrt(d_k)?",
+          "topic": "Llm",
+          "subtopic": "Model Architecture & Design",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/llm/model-architecture-design/why-do-we-scale-multiplicative-attention-by-sqrt(d_k)"
+        },
+        {
+          "title": "Could you give a brief explanation of the Transformers' architecture?",
+          "topic": "Llm",
+          "subtopic": "Model Architecture & Design",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/llm/model-architecture-design/could-you-give-a-brief-explanation-of-the-transformers-architecture"
+        },
+        {
+          "title": "What is Mode Collapse in GANs?",
+          "topic": "Llm",
+          "subtopic": "Model Architecture & Design",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/llm/model-architecture-design/what-is-mode-collapse-in-gans"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Vision",
+      "key": "computer-vision",
+      "available": 15,
+      "questions": [
+        {
+          "title": "Can you name the main innovations in AlexNet, compared to LeNet-5? What about the main innovations in GoogLeNet and ResNet?",
+          "topic": "Computer Vision",
+          "subtopic": "Convolutional Neural Networks (CNNs)",
+          "level": "Hard",
+          "minutes": 18,
+          "path": "/qnalab/theoryquestions/computer-vision/convolutional-neural-networks-cnns/can-you-name-the-main-innovations-in-alexnet-compared-to-lenet-5-what-about-the-main-innovations-in-googlenet-and-resnet"
+        },
+        {
+          "title": "In what manner are Region-Based CNNs applied in the task of object detection?",
+          "topic": "Computer Vision",
+          "subtopic": "Object Detection and Segmentation",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/computer-vision/object-detection-and-segmentation/in-what-manner-are-region-based-cnns-applied-in-the-task-of-object-detection"
+        },
+        {
+          "title": "Using Keras, construct a simple autoencoder architecture using Dense layers and a Sequential model for 784 -dimensional data.",
+          "topic": "Computer Vision",
+          "subtopic": "Generative Models",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/computer-vision/generative-models/using-keras-construct-a-simple-autoencoder-architecture-using-dense-layers-and-a-sequential-model-for-784-dimensional-data"
+        },
+        {
+          "title": "How GANs models are trained?",
+          "topic": "Computer Vision",
+          "subtopic": "Generative Models",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/computer-vision/generative-models/how-gans-models-are-trained"
+        }
+      ]
+    },
+    {
+      "topic": "Mlops",
+      "key": "mlops",
+      "available": 27,
+      "questions": [
+        {
+          "title": "How does the Multi-Arm Bandit approach differ from the A/B testing model deployment strategy?",
+          "topic": "Mlops",
+          "subtopic": "Optimization & Model Performance",
+          "level": "Hard",
+          "minutes": 20,
+          "path": "/qnalab/theoryquestions/mlops/optimization-model-performance/how-does-the-multi-arm-bandit-approach-differ-from-the-ab-testing-model-deployment-strategy"
+        },
+        {
+          "title": "How does the ML Test Score work?",
+          "topic": "Mlops",
+          "subtopic": "Optimization & Model Performance",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/mlops/optimization-model-performance/how-does-the-ml-test-score-work"
+        },
+        {
+          "title": "How can you run distributed ML in Azure?",
+          "topic": "Mlops",
+          "subtopic": "Distributed Systems",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/mlops/distributed-systems/how-can-you-run-distributed-ml-in-azure"
+        },
+        {
+          "title": "Which production testing techniques are you aware of?",
+          "topic": "Mlops",
+          "subtopic": "Testing & Monitoring",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/mlops/testing-monitoring/which-production-testing-techniques-are-you-aware-of"
+        }
+      ]
+    },
+    {
+      "topic": "Probability",
+      "key": "probability",
+      "available": 27,
+      "questions": [
+        {
+          "title": "How can you test hypotheses using Bayes' Rule?",
+          "topic": "Probability",
+          "subtopic": "Bayes Theorem",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/probability/bayes-theorem/how-can-you-test-hypotheses-using-bayes-rule"
+        },
+        {
+          "title": "Compute the probability of drawing two cards that are neither the same color nor the same number. You have a deck containing 40 cards split into four colors (red, green, blue, and yellow), with each color having 10 cards numbered from 1 to 10. What are the chances that the two cards you select (without replacement) do not share the same color or number?",
+          "topic": "Probability",
+          "subtopic": "Basic Probability",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/probability/basic-probability/compute-the-probability-of-drawing-two-cards-that-are-neither-the-same-color-nor-the-same-number-you-have-a-deck-containing-40-cards-split-into-four-colors-red-green-blue-and-yellow-with-each-color-having-10-cards-numbered-from-1-to-10-what-are-the-chances-that-the-two-cards-you-select-without-replacement-do-not-share-the-same-color-or-number"
+        },
+        {
+          "title": "You have a fair coin (heads and tails) and an unfair coin (both sides are tails). You randomly select one of the coins, flip it five times, and observe tails in every flip. What is the probability that you selected the unfair coin?",
+          "topic": "Probability",
+          "subtopic": "Bayes Theorem",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/probability/bayes-theorem/you-have-a-fair-coin-heads-and-tails-and-an-unfair-coin-both-sides-are-tails-you-randomly-select-one-of-the-coins-flip-it-five-times-and-observe-tails-in-every-flip-what-is-the-probability-that-you-selected-the-unfair-coin"
+        },
+        {
+          "title": "Considering a medical test with a true positive rate of 100% and a false positive rate of 5%, within a population where 1 in 1000 individuals actually has the condition, what is the probability that a person has the condition if their test result is positive?",
+          "topic": "Probability",
+          "subtopic": "Bayes Theorem",
+          "level": "Hard",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/probability/bayes-theorem/considering-a-medical-test-with-a-true-positive-rate-of-100-and-a-false-positive-rate-of-5-within-a-population-where-1-in-1000-individuals-actually-has-the-condition-what-is-the-probability-that-a-person-has-the-condition-if-their-test-result-is-positive"
+        }
+      ]
+    },
+    {
+      "topic": "Linear Algebra",
+      "key": "linear-algebra",
+      "available": 13,
+      "questions": [
+        {
+          "title": "Under what circumstances is a matrix's inverse present? How might one determine a nxn matrix's inverse?",
+          "topic": "Linear Algebra",
+          "subtopic": "Matrices, Vectors, and Vector Spaces",
+          "level": "Medium",
+          "minutes": 12,
+          "path": "/qnalab/theoryquestions/linear-algebra/matrices-vectors-and-vector-spaces/under-what-circumstances-is-a-matrixs-inverse-present-how-might-one-determine-a-nxn-matrixs-inverse"
+        },
+        {
+          "title": "How would you diagonalize a matrix?",
+          "topic": "Linear Algebra",
+          "subtopic": "Matrices, Vectors, and Vector Spaces",
+          "level": "Hard",
+          "minutes": 12,
+          "path": "/qnalab/theoryquestions/linear-algebra/matrices-vectors-and-vector-spaces/how-would-you-diagonalize-a-matrix"
+        },
+        {
+          "title": "Explain the concept of span and linear dependence",
+          "topic": "Linear Algebra",
+          "subtopic": "Linear Combination, Independence, Span, Basis",
+          "level": "Hard",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/linear-algebra/linear-combination-independence-span-basis/explain-the-concept-of-span-and-linear-dependence"
+        },
+        {
+          "title": "What is cofactor of a matrix? How to calculate it?",
+          "topic": "Linear Algebra",
+          "subtopic": "Matrices, Vectors, and Vector Spaces",
+          "level": "Medium",
+          "minutes": 7,
+          "path": "/qnalab/theoryquestions/linear-algebra/matrices-vectors-and-vector-spaces/what-is-cofactor-of-a-matrix-how-to-calculate-it"
+        }
+      ]
+    },
+    {
+      "topic": "Agents",
+      "key": "agents",
+      "available": 10,
+      "questions": [
+        {
+          "title": "Why do AI agents require memory systems beyond simple context windows, and how does this impact their reasoning capabilities?",
+          "topic": "Agents",
+          "subtopic": "Agentic Fundamentals: Building Blocks and Core Concepts",
+          "level": "Medium",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/agents/agentic-fundamentals-building-blocks-and-core-concepts/why-do-ai-agents-require-memory-systems-beyond-simple-context-windows-and-how-does-this-impact-their-reasoning-capabilities"
+        },
+        {
+          "title": "Why do traditional RAG systems often fail in agentic environments, and what architectural changes are necessary?",
+          "topic": "Agents",
+          "subtopic": "Memory and Knowledge Management in Agents",
+          "level": "Medium",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/agents/memory-and-knowledge-management-in-agents/why-do-traditional-rag-systems-often-fail-in-agentic-environments-and-what-architectural-changes-are-necessary"
+        },
+        {
+          "title": "Why do agents need both short-term and long-term memory, and how should the boundary between them be managed?",
+          "topic": "Agents",
+          "subtopic": "Memory and Knowledge Management in Agents",
+          "level": "Medium",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/agents/memory-and-knowledge-management-in-agents/why-do-agents-need-both-short-term-and-long-term-memory-and-how-should-the-boundary-between-them-be-managed"
+        },
+        {
+          "title": "List and describe the essential building blocks of a robust AI agentic system?",
+          "topic": "Agents",
+          "subtopic": "Agentic Fundamentals: Building Blocks and Core Concepts",
+          "level": "Medium",
+          "minutes": 10,
+          "path": "/qnalab/theoryquestions/agents/agentic-fundamentals-building-blocks-and-core-concepts/list-and-describe-the-essential-building-blocks-of-a-robust-ai-agentic-system"
+        }
+      ]
+    },
+    {
+      "topic": "System Design",
+      "key": "system-design",
+      "available": 14,
+      "questions": [
+        {
+          "title": "Design a real-time recommendation system for 100M+ users (like Spotify).",
+          "topic": "System Design",
+          "subtopic": "High-Level Design",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/system-design/high-level-design/design-a-real-time-recommendation-system-for-100m-users-like-spotify"
+        },
+        {
+          "title": "Design what to show on a user’s linkedin feed?",
+          "topic": "System Design",
+          "subtopic": "High-Level Design",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/system-design/high-level-design/design-what-to-show-on-a-users-linkedin-feed"
+        },
+        {
+          "title": "Design a ML system for fraud detection with low latency requirements.",
+          "topic": "System Design",
+          "subtopic": "High-Level Design",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/system-design/high-level-design/design-a-ml-system-for-fraud-detection-with-low-latency-requirements"
+        },
+        {
+          "title": "Design the YouTube Video recommendation system",
+          "topic": "System Design",
+          "subtopic": "High-Level Design",
+          "level": "Medium",
+          "minutes": 15,
+          "path": "/qnalab/theoryquestions/system-design/high-level-design/design-the-youtube-video-recommendation-system"
+        }
+      ]
+    }
+  ]
+}

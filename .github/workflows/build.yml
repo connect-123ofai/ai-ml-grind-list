@@ -19,28 +19,57 @@ jobs:
           python3 - <<'PY'
           import json, pathlib, sys
           bad = 0
-          for f in pathlib.Path("data").glob("*.json"):
+          LEVELS = {"Easy", "Medium", "Hard"}
+          for f in sorted(pathlib.Path("data").glob("*.json")):
               d = json.loads(f.read_text())
+              qs = d.get("questions") or [q for g in d.get("groups", []) for q in g["questions"]]
               seen_n, seen_path = set(), set()
-              for q in d["questions"]:
-                  for key in ("title", "path", "type"):
+              for q in qs:
+                  for key in ("title", "path"):
                       if not q.get(key):
-                          print(f"{f.name}: question {q.get('n')} missing {key}"); bad += 1
+                          print(f"{f.name}: a question is missing {key}"); bad += 1
                   if not q["path"].startswith("/"):
-                      print(f"{f.name}: #{q['n']} path must be site-relative"); bad += 1
-                  if q["n"] in seen_n:
-                      print(f"{f.name}: duplicate position {q['n']}"); bad += 1
+                      print(f"{f.name}: path must be site-relative: {q['path']}"); bad += 1
+                  if q.get("level") and q["level"] not in LEVELS:
+                      print(f"{f.name}: bad level {q['level']!r}"); bad += 1
+                  if "n" in q:
+                      if q["n"] in seen_n:
+                          print(f"{f.name}: duplicate position {q['n']}"); bad += 1
+                      seen_n.add(q["n"])
                   if q["path"] in seen_path:
                       print(f"{f.name}: duplicate path {q['path']}"); bad += 1
-                  seen_n.add(q["n"]); seen_path.add(q["path"])
-              if d["count"] != len(d["questions"]):
-                  print(f"{f.name}: count {d['count']} != {len(d['questions'])} questions"); bad += 1
-              print(f"{f.name}: {len(d['questions'])} questions checked")
+                  seen_path.add(q["path"])
+              if "count" in d and d["count"] != len(qs):
+                  print(f"{f.name}: count {d['count']} != {len(qs)} questions"); bad += 1
+              print(f"{f.name}: {len(qs)} questions checked")
           sys.exit(1 if bad else 0)
           PY
 
+      - name: Contribution templates present
+        run: |
+          for t in Template_QnA Template_Theory Template_Coding; do
+            test -f "templates/$t.md" || { echo "missing templates/$t.md"; exit 1; }
+          done
+          echo "all three templates present"
+
       - name: README is up to date
         run: python3 scripts/generate_readme.py --check
+
+      - name: In-page anchors resolve
+        run: |
+          python3 - <<'PY'
+          import re, pathlib, sys
+          md = pathlib.Path("README.md").read_text()
+          def a(h):
+              s = re.sub(r"[^\w\s-]", "", h.strip().lower())
+              return re.sub(r"\s+", "-", s)
+          heads = {a(m.group(1)) for m in re.finditer(r"^#{2,3}\s+(.*)$", md, re.M)}
+          bad = [l for l in re.findall(r"\]\(#([^)]+)\)", md) if l not in heads]
+          for b in bad:
+              print(f"broken in-page anchor: #{b}")
+          print(f"{len(heads)} headings, {len(bad)} broken anchors")
+          sys.exit(1 if bad else 0)
+          PY
 
 # A link checker belongs here, but is deliberately absent: Cloudflare currently
 # serves a managed challenge to non-browser clients, so a GitHub Actions runner
