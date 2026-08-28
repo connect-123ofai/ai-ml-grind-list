@@ -50,10 +50,10 @@ jobs:
 
       - name: Contribution templates present
         run: |
-          for t in Template_QnA Template_Theory Template_Coding; do
+          for t in Template_QnA Template_Theory Template_Coding Example_QnA Example_Coding; do
             test -f "templates/$t.md" || { echo "missing templates/$t.md"; exit 1; }
           done
-          echo "all three templates present"
+          echo "all templates and worked examples present"
 
       - name: README is up to date
         run: python3 scripts/generate_readme.py --check

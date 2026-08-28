@@ -30,6 +30,17 @@ UTM_SOURCE = "github"
 UTM_MEDIUM = "repo"
 CONTACT_EMAIL = "contact@aspirefrontiers.com"
 
+# Stated once per list, in the same place each time. The published lists are
+# free by design; this says the library is deeper without turning the repo into
+# an advert or implying a link above is gated.
+PRO_NOTE = (
+    "> **Every question above is free.** The full 123ofAI question bank goes "
+    "considerably deeper — several hundred further questions, with worked "
+    "solutions and AI feedback on your own answers, are part of "
+    "[123ofAI Pro](https://123ofai.com/qnalab/get-pro"
+    "?utm_source=github&utm_medium=repo&utm_campaign=pro_note)."
+)
+
 LISTS = ["grind-75-ml.json", "grind-75-llm.json"]
 MORE = "grind-more.json"
 
@@ -87,21 +98,21 @@ def fmt_hours(minutes: int) -> str:
     return f"{minutes / 60:.1f}".rstrip("0").rstrip(".") + "h"
 
 
-def question_line(q: dict, campaign: str) -> str:
-    """One tickable row. A task list, not a table: GitHub only renders
-    checkboxes in list items, and tracking progress on a fork is the whole
-    point of a grind list."""
-    bits = []
-    if q.get("level"):
-        bits.append(f'`{q["level"]}`')
-    bits.append(f'*{md_cell(q["subtopic"])}*')
-    if q.get("type") == "coding":
-        bits.append("`code`")
-    t = fmt_time(q)
-    if t:
-        bits.append(t)
-    return (f'- [ ] **{q["n"]}.** [{md_cell(q["title"])}]'
-            f'({question_url(q["path"], campaign)}) · ' + " · ".join(bits))
+def question_row(q: dict, campaign: str) -> str:
+    """One table row.
+
+    Note this is deliberately not a task list: GitHub only renders tickable
+    checkboxes in list items, so the table format trades progress-tracking on a
+    fork for a denser, more scannable layout.
+    """
+    kind = " `code`" if q.get("type") == "coding" else ""
+    return (
+        f'| {q["n"]} '
+        f'| [{md_cell(q["title"])}]({question_url(q["path"], campaign)}){kind} '
+        f'| {md_cell(q["subtopic"])} '
+        f'| {q.get("level") or "—"} '
+        f'| {fmt_time(q) or "—"} |'
+    )
 
 
 # --------------------------------------------------------------------------
@@ -132,24 +143,14 @@ def render_list_section(num: int, meta: dict) -> str:
         + (f" · **{coding} hands-on coding**" if coding else "")
     )
     o.append("")
-    o.append("<details open>")
-    o.append(f"<summary><b>Sub-topics covered</b></summary>")
+    o.append("The list is sequenced — work top to bottom.")
     o.append("")
-    o.append("| Sub-topic | Qs | Jump to |")
-    o.append("|:--|--:|:--|")
-    for sub in sorted(by_sub, key=lambda s: (-len(by_sub[s]), s)):
-        items = by_sub[sub]
-        nums = " ".join(f'[`{q["n"]}`]({question_url(q["path"], campaign)})' for q in items[:14])
-        if len(items) > 14:
-            nums += f" *+{len(items)-14}*"
-        o.append(f"| **{md_cell(sub)}** | {len(items)} | {nums} |")
-    o.append("")
-    o.append("</details>")
-    o.append("")
-    o.append("The list is sequenced — work top to bottom. Fork the repo to tick items off in your own copy.")
-    o.append("")
+    o.append("| # | Question | Area | Level | Time |")
+    o.append("|:--|:--|:--|:--|:--|")
     for q in qs:
-        o.append(question_line(q, campaign))
+        o.append(question_row(q, campaign))
+    o.append("")
+    o.append(PRO_NOTE)
     o.append("")
     o.append(f'<div align="right"><a href="{site_url("/qnalab/lists/" + meta["platform_key"], campaign)}"><b>Solve this list on 123ofAI →</b></a></div>')
     o.append("")
@@ -242,6 +243,11 @@ def render_contributing_section(num: int) -> str:
     o.append("| A concept explainer, not a question | [`Template_Theory.md`](templates/Template_Theory.md) | Notes that teach an idea |")
     o.append("| A problem with runnable code and tests | [`Template_Coding.md`](templates/Template_Coding.md) | In-browser coding problems |")
     o.append("")
+    o.append("**Not sure what a good submission looks like?** Two worked examples, filled in end to end:")
+    o.append("")
+    o.append("- [`Example_QnA.md`](templates/Example_QnA.md) — a Medium classical-ML question, answered")
+    o.append("- [`Example_Coding.md`](templates/Example_Coding.md) — a NumPy attention problem with a solution and tests that pass")
+    o.append("")
     o.append(
         "Every field maps one-to-one onto our question ingestion contract. That's "
         "deliberate: an approved submission loads straight into our ingestion form "
@@ -317,7 +323,7 @@ def render_contributors_section(num: int) -> str:
     o.append("- **Credited on the question** — merged questions carry their contributor's name on the platform.")
     o.append("- **Authorship preserved** — we merge, we don't squash your name away.")
     o.append("")
-    o.append("Published under [CC BY 4.0](LICENSE), so anything you contribute stays freely reusable by everyone, with attribution — including by you.")
+    o.append("Published under [CC BY-NC 4.0](LICENSE) — free to share and adapt with attribution, but not to resell. Contributions are licensed to 123ofAI on the same terms so they can appear here and on the platform.")
     o.append("")
     return "\n".join(o)
 
@@ -351,7 +357,7 @@ def build() -> str:
         f'<img src="{badge("Practice", fmt_hours(total_min), VIOLET)}"> '
         f'<img src="{badge("Access", "100%25 free", EMERALD)}"> '
         f'<img src="{badge("PRs", "welcome", PINK)}"> '
-        f'<img src="{badge("License", "CC BY 4.0", SLATE)}">'
+        f'<img src="{badge("License", "CC BY-NC 4.0", SLATE)}">'
     )
     p.append("")
     p.append(
@@ -382,10 +388,10 @@ def build() -> str:
     p.append(f'| **7** | [Contributors Wall](#{anchor(h_wall)}) | Who built this |')
     p.append("")
     p.append("> **How to use this**  \n"
-             "> Fork the repo and tick boxes off in your own copy. The lists are sequenced, "
-             "not sorted by difficulty — work top to bottom. The time next to each question "
-             "is roughly what a solid *spoken* answer takes; if you run well over, that's the "
-             "gap to study.")
+             "> The lists are sequenced, not sorted by difficulty — work top to bottom. "
+             "The time next to each question is roughly what a solid *spoken* answer takes; "
+             "if you run well over, that's the gap to study. Fork the repo if you want to "
+             "annotate your own copy as you go.")
     p.append("")
     p.append("---")
     p.append("")

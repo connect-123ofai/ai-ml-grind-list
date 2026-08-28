@@ -1,9 +1,9 @@
 {
   "name": "Grind 75 LLM",
   "slug": "grind-75-llm",
-  "platform_key": "GrindLLM50",
-  "platform_url": "https://123ofai.com/qnalab/lists/GrindLLM50",
-  "description": "Large language models — architecture, attention, training and fine-tuning, inference optimisation, RAG and prompting.",
+  "platform_key": "Grind75LLM",
+  "platform_url": "https://123ofai.com/qnalab/lists/Grind75LLM",
+  "description": "Large language models \u2014 architecture, attention, training and fine-tuning, inference optimisation, RAG and prompting.",
   "count": 18,
   "total_minutes": 298,
   "difficulty": {
@@ -58,7 +58,7 @@
     },
     {
       "n": 5,
-      "title": "How and why is “masked” attention implemented?",
+      "title": "How and why is \u201cmasked\u201d attention implemented?",
       "type": "qna",
       "topic": "Llm",
       "subtopic": "Model Architecture & Design",
