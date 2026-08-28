@@ -1,8 +1,8 @@
 {
   "name": "Grind 75 LLM",
   "slug": "grind-75-llm",
-  "platform_key": "Grind75LLM",
-  "platform_url": "https://123ofai.com/qnalab/lists/Grind75LLM",
+  "platform_key": "GrindLLM50",
+  "platform_url": "https://123ofai.com/qnalab/lists/GrindLLM50",
   "description": "Large language models \u2014 architecture, attention, training and fine-tuning, inference optimisation, RAG and prompting.",
   "count": 18,
   "total_minutes": 298,

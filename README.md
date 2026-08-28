@@ -146,7 +146,7 @@ The list is sequenced — work top to bottom.
 
 > **Every question above is free.** The full 123ofAI question bank goes considerably deeper — several hundred further questions, with worked solutions and AI feedback on your own answers, are part of [123ofAI Pro](https://123ofai.com/qnalab/get-pro?utm_source=github&utm_medium=repo&utm_campaign=pro_note).
 
-<div align="right"><a href="https://123ofai.com/qnalab/lists/Grind75LLM?utm_source=github&utm_medium=repo&utm_campaign=grind_75_llm"><b>Solve this list on 123ofAI →</b></a></div>
+<div align="right"><a href="https://123ofai.com/qnalab/lists/GrindLLM50?utm_source=github&utm_medium=repo&utm_campaign=grind_75_llm"><b>Solve this list on 123ofAI →</b></a></div>
 
 ---
 
