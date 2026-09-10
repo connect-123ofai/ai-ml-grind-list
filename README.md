@@ -290,17 +290,23 @@ Every question above links straight into the place you can find out whether that
 
 Drag real components onto a canvas — feature store, model registry, serving endpoint, monitoring — and have the design scored across six segments, from data pipeline to responsible AI.
 
+<a href="https://123ofai.com/qnalab/system-design?utm_source=github&utm_medium=repo&utm_campaign=platform"><img src="assets/design-studio.png" alt="ML Design Studio" width="100%"></a>
+
 [Try it →](https://123ofai.com/qnalab/system-design?utm_source=github&utm_medium=repo&utm_campaign=platform)
 
 ### Coding Platform
 
 Write and run ML code in the browser against a real test suite. NumPy and Python, no local setup, immediate pass or fail.
 
+<a href="https://123ofai.com/qnalab/mlcodingproblems?utm_source=github&utm_medium=repo&utm_campaign=platform"><img src="assets/coding-platform.png" alt="Coding Platform" width="100%"></a>
+
 [Try it →](https://123ofai.com/qnalab/mlcodingproblems?utm_source=github&utm_medium=repo&utm_campaign=platform)
 
 ### Test Your Understanding
 
 Answer in your own words and have it marked — what you covered, what you missed, and what an interviewer would have followed up on.
+
+<a href="https://123ofai.com/qnalab/generic?utm_source=github&utm_medium=repo&utm_campaign=platform"><img src="assets/interview-report.png" alt="Test Your Understanding" width="100%"></a>
 
 [Try it →](https://123ofai.com/qnalab/generic?utm_source=github&utm_medium=repo&utm_campaign=platform)
 
